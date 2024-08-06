@@ -1,0 +1,136 @@
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+    max-width: 1400px;
+    margin: auto;
+    max-height: 600px;
+    margin-top: 2rem;
+
+}
+
+.i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.i-name span:nth-child(3) {
+    font-size: 3rem;
+}
+
+
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.i-name>:nth-child(1) {
+    color: black;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.i-name>:nth-child(2) {
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 4rem;
+
+}
+
+.i-name>:nth-child(3) {
+    font-weight: 100;
+    font-size: 40px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.i-button {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+.i-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 15px;
+
+
+}
+
+.i-icons>* {
+    transform: scale(0.7);
+
+}
+
+.i-icons>*:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1300px) and (max-height:600px) {
+    .intro {
+        margin-bottom: 15rem;
+    }
+}
+
+@media screen and (max-width:650px) and (max-height:600px) {
+    .intro {
+        margin-bottom: 25rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .i-name .font {
+        font-size: 2rem;
+    }
+
+    .i-name span.arrayWords {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .intro {
+        flex-direction: column;
+        margin-bottom: 25rem;
+
+    }
+
+    .i-rigth {
+        transform: scale(0.8);
+        left: -3rem;
+    }
+
+    .i-name span.font {
+        font-size: 2rem;
+    }
+
+    .i-name span.arrayWords {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .intro {
+        margin-left: -2rem;
+
+
+    }
+
+    .i-name {
+        display: flex;
+
+        width: 100vw;
+    }
+
+    .i-name span {
+        flex: 1;
+    }
+
+}

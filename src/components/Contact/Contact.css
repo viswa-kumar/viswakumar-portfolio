@@ -1,0 +1,162 @@
+.contact-form {
+    padding: 0 3rem;
+    display: flex;
+    height: 80vh;
+    max-width: 1200px;
+    margin: auto;
+    max-height: 500px;
+    margin-top: 9rem;
+
+}
+
+.w-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 2rem;
+    margin-left: -2rem;
+
+
+}
+
+.awesome {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black);
+    position: relative;
+    margin-top: -16rem;
+    margin-left: 5px;
+
+}
+
+.awesome span:nth-child(1) {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.awesome span:nth-child(2) {
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.s-blur1 {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    filter: blur(72px);
+    z-index: -1;
+}
+
+.c-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+
+}
+
+.c-right>form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.c-right .user {
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 4rem !important;
+}
+
+.c-blur1 {
+    position: absolute;
+    top: 1rem;
+    left: 8rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(72px);
+    z-index: -1;
+}
+
+@media screen and (max-width:950px) {
+    .contact-form {
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+
+    }
+
+    .w-left {
+        margin-left: 0.7rem;
+    }
+
+    .c-right {
+        margin-top: -300px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contact-form {
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+
+    }
+
+    .w-left {
+        margin-left: 0.7rem;
+    }
+
+    .c-right {
+        margin-top: -300px;
+        margin-bottom: -2rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .contact-form {
+        flex-direction: column;
+        margin-bottom: 4rem;
+
+    }
+
+
+
+    .c-right .user {
+        width: 250px;
+
+    }
+}
+
+@media screen and (max-height:530px) {
+    .w-left {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-height:450px) {
+    .w-left {
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (max-height:370px) {
+    .w-left {
+        margin-bottom: 10rem;
+    }
+}
